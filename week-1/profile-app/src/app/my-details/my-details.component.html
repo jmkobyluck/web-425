@@ -1,5 +1,17 @@
 <ul class="list-group">
-  <li class="list-group-item"><strong>Name: </strong>Johnny Kobyluck</li>
-  <li class="list-group-item"><strong>Favorite Food: </strong>Tacos</li>
-  <li class="list-group-item"><strong>Favorite Color: </strong>Blue</li>
+  <li class="list-group-item">
+    <strong>Name: </strong>{{ myProfile.fullName }}
+  </li>
+  <li class="list-group-item">
+    <strong>Favorite Food: </strong>{{ myProfile.favoriteFood }}
+  </li>
+  <li class="list-group-item">
+    <strong>Favorite Color: </strong>{{ myProfile.favoriteColor }}
+  </li>
+  <li class="list-group-item">
+    <strong>Keywords: </strong>
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word }}
+    </span>
+  </li>
 </ul>
