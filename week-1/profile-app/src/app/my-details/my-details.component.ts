@@ -1,3 +1,13 @@
+// /*
+// ============================================
+// ; Title: Exercise 2.3
+// ; Author: Professor Krasso
+// ; Date: 14 July 2020
+// ; Modified By: Jonathan Kobyluck
+// ; Description: Data Binding
+// ;===========================================
+// */
+
 import { Component, OnInit } from '@angular/core';
 
 export default class Person {
@@ -13,7 +23,9 @@ export default class Person {
   }
 
   toString() {
-    console.log(`\n Full name: ${this.fullName}\n Favorite Food: ${this.favoriteFood}\n Favorite Color: ${this.favoriteColor}`);
+    console.log(
+      `\n Full name: ${this.fullName}\n Favorite Food: ${this.favoriteFood}\n Favorite Color: ${this.favoriteColor}`
+    );
   }
 }
 
@@ -23,11 +35,10 @@ export default class Person {
   styleUrls: ['./my-details.component.css'],
 })
 export class MyDetailsComponent implements OnInit {
-
   myProfile: Person;
 
   constructor() {
-    this.myProfile = new Person("Jonathan Kobyluck", "Tacos", "Blue");
+    this.myProfile = new Person('Jonathan Kobyluck', 'Tacos', 'Blue');
     this.myProfile.toString();
   }
 

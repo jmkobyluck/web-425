@@ -1,10 +1,10 @@
 // /*
 // ============================================
-// ; Title: Exercise 1.3
+// ; Title: Assignment 2.4
 // ; Author: Professor Krasso
-// ; Date: 09 July 2020
+// ; Date: 15 July 2020
 // ; Modified By: Jonathan Kobyluck
-// ; Description: Angular CLI
+// ; Description: Routing in Action
 // ;===========================================
 // */
 
@@ -16,5 +16,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  myWorld = "You are now in Johnny's world!";
+  title = 'composer-app';
 }

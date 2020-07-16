@@ -1,3 +1,13 @@
+// /*
+// ============================================
+// ; Title: Exercise 2.3
+// ; Author: Professor Krasso
+// ; Date: 14 July 2020
+// ; Modified By: Jonathan Kobyluck
+// ; Description: Data Binding
+// ;===========================================
+// */
+
 import { Component } from '@angular/core';
 
 @Component({
