@@ -25,7 +25,7 @@ export class BooksService {
         isbn: '9780545582889',
         title: 'Harry Potter and the Sorcerers Stone',
         description:
-          'A young boy, Harry Potter, discovers he is a wizard and engulfs on an adventure through magic, wizarding school, and facing his ultimate enemy who killed hid parents, Lord Voldemort.',
+          'A young boy, Harry Potter, discovers he is a wizard and engulfs on an adventure through magic, wizarding school, and facing his ultimate enemy who killed his parents, Lord Voldemort.',
         numOfPages: 309,
         authors: ['J.K. Rowling'],
       },
@@ -62,7 +62,7 @@ export class BooksService {
         authors: ['J.K. Rowling'],
       },
       {
-        isbn: '978545582995',
+        isbn: '9780545582995',
         title: 'Harry Potter and the Half-Blood Prince',
         description:
           'Dumbledore guides Harry on a crucial search of "Horcruxes" in order to stop Voldemort once and for all.',
@@ -70,10 +70,10 @@ export class BooksService {
         authors: ['J.K. Rowling'],
       },
       {
-        isbn: '978545583008',
+        isbn: '9780545583008',
         title: 'Harry Potter and the Deathly Hallows',
         description:
-          'Harry and his friends set off on a search to find what are call the "deathly hallows" before voldemort is able to acquire them.',
+          'Harry and his friends set off on a search to find what are call the "deathly hallows" before Voldemort is able to acquire them.',
         numOfPages: 749,
         authors: ['J.K. Rowling'],
       },
