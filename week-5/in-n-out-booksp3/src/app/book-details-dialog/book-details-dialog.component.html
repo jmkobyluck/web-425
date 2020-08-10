@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-title>{{ book.title }}</mat-card-title>
+  <mat-card-content fxLayout="column">
+    <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+    <p><strong>Author:</strong> {{ book.authors.join(", ") }}</p>
+    <p><strong>Description:</strong> <br />{{ book.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" matDialogClose="confirm">
+      OK
+    </button>
+  </mat-card-actions>
+</mat-card>
