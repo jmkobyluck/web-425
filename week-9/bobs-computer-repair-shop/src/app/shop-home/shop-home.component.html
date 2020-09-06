@@ -1,0 +1,49 @@
+<div fxLayout="row wrap" fxLayoutGap="20px">
+  <div class="shop-parts" fxFlex="30" fxFlexOffset="10">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title>Parts</mat-card-title>
+      <div class="shop">
+        <mat-card-content>
+          <mat-selection-list #list (selectionChange)="onChange($event)">
+            <mat-list-option
+              class="list"
+              *ngFor="let services of selectableParts"
+              [value]="services"
+            >
+              <div class="list-item">
+                {{ services.name }}: <span>${{ services.price }}</span>
+              </div>
+            </mat-list-option>
+          </mat-selection-list>
+        </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
+  <div class="shop" fxFlex="30">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title>Services</mat-card-title>
+      <div class="shop-services">
+        <mat-card-content>
+          <mat-selection-list #list (selectionChange)="onChange($event)">
+            <mat-list-option
+              class="list"
+              *ngFor="let services of selectableServices"
+              [value]="services"
+            >
+              <div class="list-item">
+                {{ services.name }}: <span>${{ services.price }}</span>
+              </div>
+            </mat-list-option>
+          </mat-selection-list>
+        </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
+  <div class="shop-summary" fxFlex="20">
+    <mat-card class="mat-elevation-z8" (selectionChange)="onChange($event)">
+      <mat-card-title>Total</mat-card-title>
+
+      <app-shop-summary [summary]="summary"></app-shop-summary>
+    </mat-card>
+  </div>
+</div>

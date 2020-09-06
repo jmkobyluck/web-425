@@ -1,0 +1,10 @@
+.total-price {
+  color: red;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.dollar-sign {
+  font-weight: 500;
+  font-size: 60px;
+}

@@ -1,0 +1,8 @@
+span {
+  color: red;
+  font-weight: bold !important;
+}
+
+.list-item {
+  display: inline-block;
+}
